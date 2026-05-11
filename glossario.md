@@ -31,4 +31,13 @@ Programación diferenciable
 
 Sistema de Lotka-Volterra
 : Modelo depredador-presa descripto por el sistema de ODEs: $\frac{dx}{dt} = \alpha x - \beta x y$, $\frac{dy}{dt} = \delta x y - \gamma y$. Es uno de los ejemplos recurrentes del curso. — [Clase 2](clases/clase2.md)
+
+PINN
+: *Physics-Informed Neural Network*: Modelo que incorpora ecuaciones diferenciales como restricciones suaves durante el entrenamiento, minimizando $\mathcal{L}_{\text{emp}} + \lambda \|D[x(\theta)]\|$. El hiperparámetro $\lambda$ controla cuánto se penaliza el incumplimiento de la ecuación diferencial. — [Clase 8](clases/clase8.md) [Clase 9](clases/clase9.md)
+
+Número de condición
+: Medida de "mal comportamiento" de un problema de optimización, definida como el cociente entre el mayor y menor autovalor del Hessiano $H = \nabla^2 \mathcal{L}$: $\kappa(H) = \lambda_{\max}(H) / \lambda_{\min}(H)$. Un $\kappa(H)$ grande implica curvas de nivel elongadas y convergencia lenta del gradiente descendente. — [Clase 9](clases/clase9.md)
+
+Sesgo espectral
+: Tendencia de las redes neuronales con bias a aprender funciones de baja frecuencia antes que las de alta frecuencia. En el contexto de las PINNs, se aplica escalado a la red para corregir este sesgo. — [Clase 9](clases/clase9.md)
 :::
