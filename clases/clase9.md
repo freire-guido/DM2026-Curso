@@ -14,18 +14,21 @@ Esta clase continúa directamente desde la [Clase 8](clase8.md), donde se introd
 
 Cuando queremos estimar o aproximar una ecuación diferencial con modelos de aprendizaje automático, hay tres enfoques principales:
 
-1. **Emuladores:** se estima la ecuación diferencial con otro modelo de ML, sin imponerle ninguna estructura dinámica al modelo.
+1. **Emuladores:** se estima la ecuación diferencial con otro modelo de ML.
+Por ejemplo, cuando hay ecuaciones costosas (Navier-Stokes, etc.)
 
-2. **Restricciones suaves** (vía Lagrangiano): el modelo se entrena minimizando una función de costo empírica $\mathcal{L}_{\text{emp}}$ más un término de penalización $D[x(\theta)]$ que _incentiva_ satisfacer la ecuación diferencial. El caso más representativo son las **PINNs**:
-
-$$
-\min_{\theta,\, x} \mathcal{L}_{\text{emp}}(y, x, \theta) + \lambda \| D[x(\theta)] \|
-$$
-
-3. **Restricciones fuertes** (se satisfacen _estrictamente_): el modelo debe satisfacer la ecuación diferencial $D[x(\theta)]$ en todo momento. Son los enfoques de tipo **NODE** y **UDE**:
+2. **Restricciones suaves** (vía Lagrangiano): el modelo se entrena minimizando una función de costo empírica $\mathcal{L}_{\text{emp}}$ más un término de penalización $D[x(\theta)]$ que _incentiva_ satisfacer la ecuación diferencial.
+Por ejemplo, las **PINNs**:
 
 $$
-\min_{\theta,\, x} \mathcal{L}_{\text{emp}}(y, x(\theta), \theta) \quad \text{s.a. } D[x(\theta)] = 0
+\min_{\theta,\, x} \mathcal{L}_{\text{emp}}(y, x, \theta) + \lambda \| D[x(\theta)] \|.
+$$
+
+3. **Restricciones fuertes** (se satisfacen _estrictamente_): el modelo debe satisfacer la ecuación diferencial $D[x(\theta)]$ en todo momento.
+Son las **NODE** y **UDE**:
+
+$$
+\min_{\theta,\, x} \mathcal{L}_{\text{emp}}(y, x(\theta), \theta) \quad \text{s.a. } D[x(\theta)] = 0.
 $$
 
 ## Dualidad Lagrangiana
