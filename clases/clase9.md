@@ -6,6 +6,10 @@ title: No9 - PINNs (continuación)
 
 **Fecha:** 11/05/2026
 
+:::{iframe} https://www.youtube.com/embed/blahblahblah
+:width: 100%
+:::
+
 :::{seealso}
 Esta clase continúa directamente desde la [Clase 8](clase8.md), donde se introdujeron las PINNs.
 :::
