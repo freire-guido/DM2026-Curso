@@ -18,7 +18,7 @@ Cuando queremos estimar o aproximar una ecuación diferencial con modelos de apr
 Por ejemplo, cuando hay ecuaciones costosas (Navier-Stokes, etc.)
 
 2. **Restricciones suaves** (vía Lagrangiano): el modelo se entrena minimizando una función de costo empírica $\mathcal{L}_{\text{emp}}$ más un término de penalización $D[x(\theta)]$ que _incentiva_ satisfacer la ecuación diferencial.
-Por ejemplo, las **PINNs**:
+Por ejemplo, las {term}`PINN`s:
 
 $$
 \min_{\theta,\, x} \mathcal{L}_{\text{emp}}(y, x, \theta) + \lambda \| D[x(\theta)] \|.
@@ -58,7 +58,7 @@ Curvas de nivel de $\mathcal{L}_{\text{PINN}}$ (rosa) alrededor de la variedad d
 ```
 
 :::{note} Condición de descenso de gradiente
-Una forma de cuantificar cuán mal condicionado está el problema de optimización es analizar el **número de condición** de la matriz Hessiana $H = \nabla^2 \mathcal{L}$:
+Una forma de cuantificar cuán mal condicionado está el problema de optimización es analizar el {term}`número de condición <Número de condición>` de la matriz Hessiana $H = \nabla^2 \mathcal{L}$:
 
 $$
 \kappa(H) = \frac{\lambda_{\max}(H)}{\lambda_{\min}(H)}
@@ -107,5 +107,5 @@ De esta manera, en $t = t_0$ se tiene $u(t_0) = \text{NN}(t_0) \cdot 0 + u_0 = u
 
 :::{note}
 Se aplica escalado a la red porque las redes con bias tienden a ajustar mejor funciones de alta frecuencia que de baja frecuencia.
-El escalado busca corregir este sesgo espectral.
+El escalado busca corregir este {term}`sesgo espectral <Sesgo espectral>`.
 :::
