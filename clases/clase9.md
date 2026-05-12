@@ -1,8 +1,8 @@
 ---
-title: No9 - PINNs (continuación)
+title: No9 - PINNs Pt2
 ---
 
-# Physics-Informed Neural Networks (PINNs): restricciones y dificultades
+# Physics-Informend Neural Networks (PINNs)
 
 **Fecha:** 11/05/2026
 

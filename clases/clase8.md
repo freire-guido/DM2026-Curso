@@ -1,5 +1,5 @@
 ---
-title: No8 -PINNs
+title: No8 - PINNs
 ---
 
 # Physics-Informend Neural Networks (PINNs)
