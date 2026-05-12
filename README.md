@@ -21,4 +21,4 @@ A continuación, una lista de los estudiantes que contribuyeron a cada clase.
 | No5           | Tomás Schmidt([@tomasschmidt04](https://github.com/tomasschmidt04)), Victoria Pérez Olivera ([@vperezol](https://github.com/vperezol)), Camila Mariana Ponce ([@CamilaMarianaPonce](https://github.com/CamilaMarianaPonce))  |
 | No6           | ... |
 | No7           | Ema Sairstein ([@emasapirstein](https://github.com/emasapirstein)), Ingrid von Foerster ([@ingruvf](https://github.com/ingruvf))|
-| No9           | Guido Freire ([@freire-guido](https://github.com/freire-guido)) |
+| No9           | Guido Freire ([@freire-guido](https://github.com/freire-guido)), Mathías Rolando ([@mathy_rolando](https://github.com/mathyrolando))|
