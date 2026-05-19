@@ -2,7 +2,7 @@
 title: No9 - PINNs Pt2
 ---
 
-# Physics-Informend Neural Networks (PINNs)
+# Physics-Informed Neural Networks (PINNs)
 
 **Fecha:** 11/05/2026
 
